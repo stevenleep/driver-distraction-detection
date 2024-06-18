@@ -1,4 +1,6 @@
-# Windows 环境准备
+# 环境准备
+
+## Windows 环境准备
 #### 安装scoop
 https://get.scoop.sh
 ```ini
@@ -13,7 +15,18 @@ scoop install pipx
 pipx ensurepath
 ```
 
-#### 安装poetry
+## MacOS 环境准备
+### 安装pipx环境
+```ini
+brew install pipx
+pipx ensurepath
+sudo pipx ensurepath --global # optional to allow pipx actions with --global argument
+```
+
+## Linux 环境准备
+参考地址：https://github.com/pypa/pipx?tab=readme-ov-file#on-linux
+
+### 安装poetry
 ```ini
 pipx install poetry
 ```
