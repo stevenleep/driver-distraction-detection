@@ -1,0 +1,35 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - var(--nav-height));
+}
+
+.content #signInForm {
+  border-radius: var(--border-radius);
+  padding: 60px 46px;
+  cursor: pointer;
+  width: 500px;
+  margin-top: -150px;
+}
+
+.content #signInForm .form-header {
+  margin-bottom: 38px;
+  border-bottom: 1px dashed #f0eeee;
+  padding-bottom: var(--padding);
+}
+
+.content .form-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.content .form-body .form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.content .form-body label {
+  font-size: var(--font-size);
+}

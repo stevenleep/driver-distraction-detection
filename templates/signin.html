@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='static/logo.svg') }}" type="image/x-icon">
+    <title>基于姿态辅助的轻量化驾驶分心监测辅助监测平台</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/clear.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/signin.css') }}" />
+    <script type="module" src="{{ url_for('static', filename='js/validate.js') }}"></script>
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <ul class="layout nav-container">
+          <li>
+            <div class="logo-box">
+              <img src="{{ url_for('static', filename='static/logo.svg') }}" alt="logo" />
+            </div>
+            <h1>基于姿态辅助的轻量化驾驶分心监测辅助监测平台</h1>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="layout content">
+        <form id="signInForm">
+          <div class="form-header">
+            <h2>登录</h2>
+          </div>
+
+          <ul class="form-body">
+            <li class="form-item">
+              <label for="username">用户名</label>
+              <input
+                required
+                type="text"
+                name="username"
+                id="username"
+                placeholder="请输入3-20位用户名，仅允许字母和数字、特殊字符."
+              />
+            </li>
+            <li class="form-item">
+              <label for="password">密码</label>
+              <input
+                autocomplete="off"
+                required
+                type="password"
+                name="password"
+                id="password"
+                placeholder="请输入6-20位的用户密码，仅允许字母和数字、特殊字符."
+              />
+            </li>
+            <li class="form-item">
+              <button id="submit" type="submit">登 录</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="{{ url_for('static', filename='js/signin.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+/* container */
+.container {
+  /* padding: 12px 0; */
+  height: calc(100% - var(--nav-height));
+  overflow-x: auto;
+}
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 16px 8px;
+}
+
+.applications-list > li {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.applications-list > li:hover {
+  /* box-shadow: #f79c9c 2px 3px, #f79c9c -2px 3px; */
+  border: 2px solid #f79c9c;
+  background-color: #f8e4e4;
+}
+
+.applications-list > li > p {
+  font-size: 14px;
+  color: rgb(69, 68, 68);
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  margin-bottom: 3px;
+}
+
+.applications-list > li > button {
+  outline: none;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 6px;
+}
