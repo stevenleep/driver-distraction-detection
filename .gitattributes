@@ -1,0 +1,8 @@
+*.md linguist-language=markdown
+*.yml linguist-language=python
+*.html linguist-language=python
+*.js linguist-language=javascript
+*.css linguist-language=css
+*.db linguist-language=sql
+*.sql linguist-language=sql
+*.toml linguist-language=toml
